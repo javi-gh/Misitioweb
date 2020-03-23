@@ -3,14 +3,15 @@
   padding: 0;
 }
 .navegacion{
-    
+    background-color: green;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 .menu {
     list-style: none;
     display: flex;
-    background-color: green;
-
     
+    grid-column: 3 / 4;    
 }
 .item{
     padding: 1em;
