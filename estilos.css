@@ -5,7 +5,10 @@
   --colorPrimarioNav: green;
 }
 body{
-    background-color: rgb(236, 78, 78);
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .header{
     width: 100%;
@@ -19,7 +22,7 @@ body{
     }
 
 .menu {
-    width: auto;
+    width: 100vw;
     height: 3.5em;
     list-style: none;
     display: flex;
@@ -36,9 +39,16 @@ body{
 .item:hover{
     background: rgba(4, 94, 4, 0.521);
 }
+.imagen{
+    height: 3em;
+    margin: 1em
+    grid-column: 1 / 2; 
+    grid-row: 1/ 2;
+    align-items: center;
+}
 @media(max-width: 800px){
     .menu{
-        grid-column: 1 /4;
+        grid-column: 2 /4;
         grid-row: 1/ 2;
     }
 
