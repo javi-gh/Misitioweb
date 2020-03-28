@@ -52,11 +52,7 @@ body{
     }
 }
 
-<<<<<<< HEAD
 @media(max-width: 420px){
-=======
-@media(max-width: 400px){
->>>>>>> 6e926546480bef45c96bad9adda32a3f407aa1f7
     .item{
         display: none;
     }
